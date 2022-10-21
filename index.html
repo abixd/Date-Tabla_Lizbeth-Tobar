@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Tabla</title>
+</head>
+<body>
+  
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th class="table-dark">Platillos</th>
+                <th class="table-dark">Nombre</th>
+                <th class="table-dark">País de Origen</th>
+                <th class="table-dark">Lugares</th>
+                <th class="table-dark">Recetas</th>
+                <th class="table-dark">Tipo de pago</th>
+                <th class="table-dark">Opciones</th>
+            </tr>
+        </thead>
+       <tbody class="table-group-divider">
+        <tr>
+        <td>
+            <figure class="figura"> 
+                <img src="img/pupusas.jpg" width="200px" class="figure-img  img-fluid rounded" alt="imagen de empleado">
+                <figcaption class="figure-caption"></figcaption>
+            </figure>
+            </td>
+            <td>Pupusas</td>
+            <td>El Salvador</td>
+            <td> <span class="badge text-bg-info"> <i style="color:black;" onclick="mensaje11()">Sitios</i></span> </td>
+            <td> <span class="badge text-bg-info"> <i style="color:black;" onclick="mensaje1()">Receta</i></span> </td>
+            <td> <span class="badge text-bg-warning"> <i class="bi bi-cash" style="font-size: 1rem;"> <i class="bi bi-credit-card-2-front"></i></i> </span></td>
+            <td>
+            <button class="btn btn-info">
+             <i class="bi bi-pencil-square" style="font-size: 1.5rem; color:aliceblue" ></i>
+            </button>
+            <button class="btn btn-danger">
+                <i class="bi bi-archive-fill" style="font-size: 1.5rem; color:aliceblue" ></i>
+               </button>
+        </tr>
+       
+
+        <tr>
+            <td>
+                <figure class="figura"> 
+                    <img src="img/elotes-locos.jpg" width="200px" class="figure-img  img-fluid rounded" alt="imagen de empleado">
+                    <figcaption class="figure-caption"></figcaption>
+                </figure>
+                </td>
+                <td>Elotes Locos</td>
+                <td>El Salvador</td>
+                <td> <span class="badge text-bg-info"> <i style="color:black;" onclick="mensaje22()">Sitios</i></span> </td>
+                <td> <span class="badge text-bg-info"> <i style="color:black;" onclick="mensaje2()">Receta</i></span> </td>
+                <td> <span class="badge text-bg-warning"> <i class="bi bi-cash" style="font-size: 1rem;"> <i class="bi bi-credit-card-2-front"></i></i></span></td>
+                <td>
+                <button class="btn btn-info">
+                 <i class="bi bi-pencil-square" style="font-size: 1.5rem; color:aliceblue" ></i>
+                </button>
+                <button class="btn btn-danger">
+                    <i class="bi bi-archive-fill" style="font-size: 1.5rem; color:aliceblue" ></i>
+                   </button>
+            </tr>
+
+            <tr>
+                <td>
+                    <figure class="figura"> 
+                        <img src="img/empanadas.jpg" width="200px" class="figure-img  img-fluid rounded" alt="imagen de empleado">
+                        <figcaption class="figure-caption"></figcaption>
+                    </figure>
+                    </td>
+                    <td>Empanadas de frijoles</td>
+                    <td>El Salvador</td>
+                    <td> <span class="badge text-bg-info"> <i style="color:black;" onclick="mensaje33()">Sitios</i></span> </td>
+                    <td> <span class="badge text-bg-info"> <i style="color:black;" onclick="mensaje3()">Receta</i></span> </td>
+                    <td> <span class="badge text-bg-warning"> <i class="bi bi-cash" style="font-size: 1rem;"> <i class="bi bi-credit-card-2-front"></i></i></span></td>
+                    <td>
+                    <button class="btn btn-info">
+                     <i class="bi bi-pencil-square" style="font-size: 1.5rem; color:aliceblue" ></i>
+                    </button>
+                    <button class="btn btn-danger">
+                        <i class="bi bi-archive-fill" style="font-size: 1.5rem; color:aliceblue" ></i>
+                       </button>
+                </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Recetas de El Salvador</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>100%</th>
+            <th></th>
+        </tr>
+    </tfoot>
+    </table>     
+    </body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+ <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"> </script>
+
+ <script>
+    function mensaje11(){
+        swal.fire({
+            title:'Sitios',
+            Text:'informacion de Lugares',
+            imageUrl: 'img/lugar.png',
+            imageWidth: 100,
+            imageAlt: 'informacion de Lugares',
+            html:
+            'Tipicos Margoth: Escalón.<br />' + 
+            'El Rinconcito: Calle 5 de Noviembre.<br />' +               
+            'Pupusería Suiza: Escalón.',
+            focusConfirm: false,
+            confirmButtonText:
+            '<i class="fa fa-thumbs-up"></i> OK!',          
+        })
+    }
+ </script>
+
+ <script>
+    function mensaje1(){
+        swal.fire({
+            title:'Receta',
+            Text:'informacion del platillo',
+            imageUrl: 'img/comida.png',
+            imageWidth: 100,
+            imageAlt: 'informacion del platillo',
+            html:
+            'Ingrediente 1: ½ lb masa de maíz molido.<br />' + 
+            'Ingrediente 2: Agua.<br />' + 
+            'Ingrediente 3: Sal al gusto.<br />' + 
+            'Ingrediente 4: Relleno: queso, frijoles, pollo, carne (opcionales).<br />' + 
+            'Paso 1: Antes de preparar la masa, se debe disponer la plancha y se unta un poco de aceite para evitar que las pupusas se peguen.<br />' +       
+            'Paso 2: Se prepara la harina, la cual se revuelve con agua tibia para formar la masa. Se amasa lo suficiente, y le damos la forma de una tortilla. Al estar listo, colocamos las pupusas en la plancha por aproximadamente 5 minutos.<br />' +   
+            'Paso 3: En una mesa, colocamos las pupusas junto a los ingredientes que gusten para acompañarlas. Por general se agrega queso, frijoles, carne, pollo. Queda a su gusto.<br />' +   
+            'Paso 4: No debe agregar mucho relleno, ya que la masa debe cerrar y no queremos que los ingredientes rebosen.<br />' +   
+            'Paso 5: Esta entrada debe acompañarse de un curtido o salsa de tomate.<br />' +                
+            'Paso 6: Listo. Nos disponemos a degustar.',
+            focusConfirm: false,
+            confirmButtonText:
+            '<i class="fa fa-thumbs-up"></i> OK!',          
+        })
+    }
+ </script>
+
+<script>
+    function mensaje22(){
+        swal.fire({
+            title:'Sitios',
+            Text:'informacion de Lugares',
+            imageUrl: 'img/lugar.png',
+            imageWidth: 100,
+            imageAlt: 'informacion de Lugares',
+            html:
+            'Mister Elote: Santa Ana.<br />' + 
+            'D/elote. Galerias.<br />' +               
+            'Típicos San Luis: Avenida, Izalco.',
+            focusConfirm: false,
+            confirmButtonText:
+            '<i class="fa fa-thumbs-up"></i> OK!',          
+        })
+    }
+ </script>
+
+<script>
+    function mensaje2(){
+        swal.fire({
+            title:'Receta',
+            Text:'informacion del platillo',
+            imageUrl: 'img/comida.png',
+            imageWidth: 100,
+            imageAlt: 'informacion del platillo',
+            html:
+            'Ingrediente 1: Elotes.<br />' + 
+            'Ingrediente 2: Queso rayado.<br />' + 
+            'Ingrediente 3: Salsa negra.<br />' + 
+            'Ingrediente 4: Salsa kétchup.<br />' + 
+            'Ingrediente 5: Mostaza.<br />' + 
+            'Ingrediente 6: Palillos grades.<br />' + 
+            'Paso 1: Primero limpie bien los elotes. Debe pelarlos y remover la seda. Una vez pelados y limpios, monte en la cocina una olla grande con suficiente agua.<br />' +       
+            'Paso 2: Al empezar a hervir el agua, eche los elotes que desee. Dejamos cocinar alrededor de 15 minutos a fuego medio.<br />' +   
+            'Paso 3: Sacamos y dejamos escurrir los elotes. Con un cuchillo abrimos un agujero en la parte baja del elote, hay que tener mucho cuidado de no cortarse los dedos.<br />' +   
+            'Paso 4: Insertamos el palito alargado que servirá de base para sostener nuestro manjar, y con una espátula o brocha de cocina, untamos la mayonesa en todo el elote, después agregamos la mostaza, la salsa negra y la salsa kétchup a su gusto.<br />' +   
+            'Paso 5: Finalmente, agréguele queso rallado encima de las salsas.<br />' +                
+            'Paso 6: Listo. Nos disponemos a degustar.',
+            focusConfirm: false,
+            confirmButtonText:
+            '<i class="fa fa-thumbs-up"></i> OK!',          
+        })
+    }
+ </script>
+
+<script>
+    function mensaje33(){
+        swal.fire({
+            title:'Sitios',
+            Text:'informacion de Lugares',
+            imageUrl: 'img/lugar.png',
+            imageWidth: 100,
+            imageAlt: 'informacion de Lugares',
+            html:
+            'Las Gauchitas: Centro Comercial Hillside Local 8.<br />' + 
+            'Típicos Margoth: Escalón.<br />' +               
+            'Típicos San Luis: Avenida, Izalco.',
+            focusConfirm: false,
+            confirmButtonText:
+            '<i class="fa fa-thumbs-up"></i> OK!',          
+        })
+    }
+ </script>
+
+<script>
+    function mensaje3(){
+        swal.fire({
+            title:'Receta',
+            Text:'informacion del platillo',
+            imageUrl: 'img/comida.png',
+            imageWidth: 100,
+            imageAlt: 'informacion del platillo',
+            html:
+            'Ingrediente 1: 2 plátanos bien maduros.<br />' + 
+            'Ingrediente 2: ½ taza de frijoles refritos.<br />' + 
+            'Ingrediente 3: Aceite.<br />' + 
+            'Ingrediente 4: Azúcar.<br />' + 
+            'Paso 1: Cueza los plátanos con todo y su cáscara. Luego pélelos y muélalos.<br />' +       
+            'Paso 2: Forme rueditas y llénelas con una cucharada de frijoles refritos y dóblelas por la mitad, apretando la orilla.<br />' +                  
+            'Paso 3: Ponga a freír hasta que doren y escurre sobre papel absorbente. Páselas en azúcar. ¡Buen Provecho!',
+            focusConfirm: false,
+            confirmButtonText:
+            '<i class="fa fa-thumbs-up"></i> OK!',          
+        })
+    }
+ </script>
+
+</html>
